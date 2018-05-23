@@ -1,0 +1,51 @@
+{
+  "pages":[   
+    "pages/index/index",  
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/embor/inject",
+    "pages/hair/inject",
+    "pages/inject/inject",
+    "pages/secret/inject",
+
+    "cosmetology/index/index",
+    "cosmetology/logs/logs",
+    
+    "platform/index/index",
+    "platform/logs/logs",
+
+    "l/index/index",
+    "l/logs/logs"
+  ],
+  "window":{   
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF1493",
+    "navigationBarTitleText": "神美国际",
+    "navigationBarTextStyle":"red"
+  },
+ "tabBar":{
+  "color": "#CC0000",
+  "selectedColor": "#33CCFF",
+  "position":"bottom",
+  "list":[
+    {
+    "pagePath":"pages/index/index",
+    "text":"神美首页",
+    "iconPath":"img/z1.png"
+  },
+  {
+    "pagePath":"cosmetology/index/index",
+    "text":"项目",
+    "iconPath": "img/z2.png"
+  },{
+    "pagePath":"platform/index/index",
+    "text":"预约",
+    "iconPath": "img/z3.png"
+  },{
+    "pagePath":"l/index/index",
+    "text":"关于神美",
+    "iconPath": "img/z4.png"
+  }
+  ]
+}
+}

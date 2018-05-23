@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+<switch wx:for="{{obj}}" wx:key="unique" style="display:block;">{{item.id}}</switch>
+<button bindtap="switch">switch</button>
+<button bindtap="addTo">add</button>
+<switch wx:for="{{num}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>
+</view>

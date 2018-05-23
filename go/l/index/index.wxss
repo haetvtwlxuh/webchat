@@ -1,0 +1,10 @@
+
+.home{
+  width:100%;
+  height: 100%;
+  text-align: center;
+  background-color: #FF6EB4;
+}
+.cen{
+  padding-top: 100px;
+}
