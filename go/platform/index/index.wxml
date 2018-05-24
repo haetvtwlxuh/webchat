@@ -1,4 +1,5 @@
 <!--index.wxml-->
-<view clas"top">
-
+<view>
+<image src="http://www.gzweizx.com/wp-content/uploads/2018/05/liuc.png"></image>
+<button bindtap="callme">预约</button>
 </view>

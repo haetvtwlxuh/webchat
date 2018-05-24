@@ -7,15 +7,7 @@ Page({
     this.setData({ msg: "你好啊" })
   },
   data: {
-    obj:[
-      { id: 5, unique: 'unique_5' },
-      { id: 4, unique: 'unique_4' },
-      { id: 3, unique: 'unique_3' },
-      { id: 2, unique: 'unique_2' },
-      { id: 1, unique: 'unique_1' },
-      { id: 0, unique: 'unique_0' }
-    ],
-    num:[1,2,3,4],
+    title:'word',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -29,6 +21,19 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  s:function(){
+    var xhr = new XMLHttpRequest();
+  },
+  ss:function(){
+    this.setData({
+      title:'死神'
+    })
+  },
+  sss:function(){
+    this.setData({
+      title:'打算'
     })
   },
   onLoad: function () {

@@ -1,8 +1,22 @@
 <!--index.wxml-->
-<view>
-<switch wx:for="{{obj}}" wx:key="unique" style="display:block;">{{item.id}}</switch>
-<button bindtap="switch">switch</button>
-<button bindtap="addTo">add</button>
-<switch wx:for="{{num}}" wx:key="*this" style="display: block;"> {{item}} </switch>
-<button bindtap="addNumberToFront"> Add to the front </button>
+<view class="left">
+<a href bindtap="s">修正</a>
+<a href bindtap="ss">死神</a>
+<a href bindtap="sss">祖师</a>
+<a href>助手</a>
+<a href>助手</a>
+</view>
+
+<view class="right">
+  <view class="bow">
+    <text class="title">{{title}}</text>
+    <image src="http://pics.sc.chinaz.com/Files/pic/icons128/6964/s1.png"></image>
+    <text>注射</text>
+  </view>
+  <view class="bow">
+    <text class="title">{{title}}</text>
+    <image src="http://pics.sc.chinaz.com/Files/pic/icons128/6964/s1.png"></image>
+    <text>注射</text>
+  </view>
+
 </view>
