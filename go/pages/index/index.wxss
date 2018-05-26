@@ -25,8 +25,8 @@
 }
 .tab-img{
   margin: auto;
-  width:50rpx;
-  height:50rpx;
+  width:100rpx;
+  height:100rpx;
   overflow:unset;
   padding:15rpx 12rpx 0 12rpx;
 }

@@ -23,6 +23,12 @@ Page({
       phoneNumber: '13642655052',
     })
   },
+  onShareAppMessage: function (res) {
+    return {
+      title: '神美国际',
+      path: '/pages/index/index'
+    }
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

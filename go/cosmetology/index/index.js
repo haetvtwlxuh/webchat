@@ -23,6 +23,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  onShareAppMessage: function (res) {
+    return {
+      title: '神美国际',
+      path: '/pages/index/index'
+    }
+  },
   s:function(){
     var xhr = new XMLHttpRequest();
   },
