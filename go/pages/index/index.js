@@ -7,10 +7,25 @@ Page({
     this.setData({ msg: "你好啊" })
   },
   data: {
-    message: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+//轮播图片
+    imgsrc: [
+      { id: 1 ,url:'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'},
+      { id: 2 ,url:'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'},
+      { id: 3 ,url:'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'},
+    ],
+//首页菜单导航页
+    arricon:[
+      { id :1, icon: "http://pics.sc.chinaz.com/Files/pic/icons128/6981/b10.png", title: '注射',url: '/pages/inject/inject'},
+      { id: 2, icon: "http://pics.sc.chinaz.com/Files/pic/icons128/6981/b10.png", title: '文秀', url: '/pages/inject/inject'},
+      { id: 3, icon: "http://pics.sc.chinaz.com/Files/pic/icons128/6981/b11.png", title: '私密', url: '/pages/inject/inject'},
+      { id: 4, icon: "http://pics.sc.chinaz.com/Files/pic/icons128/6981/b14.png", title: '美容', url: '/pages/inject/inject' },
+      { id: 5, icon: "http://pics.sc.chinaz.com/Files/pic/icons128/6981/b14.png", title: '美容', url: '/pages/inject/inject' },
+    ],
+//vido
+    vidosrc:'http://www.w3school.com.cn//i/movie.mp4',
   },
   //事件处理函数
   bindViewTap: function() {

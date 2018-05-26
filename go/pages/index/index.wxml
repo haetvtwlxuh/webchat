@@ -1,29 +1,20 @@
 <!--index.wxml-->
-<view>
-  <image src='http://www.gzweizx.com/wp-content/uploads/2018/05/微信图片_20170506092939-副本-副本-副本.jpg' class='imgs'></image>
-</view>
+<swiper indicator-dots='true' autoplay='true' interval='5000' duration='100' >
+  <block wx:for="{{imgsrc}}" wx:key="id">
+    <swiper-item>
+      <image src="{{item.url}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
 <view class="setTitle">
-    <navigator class="tab" url="/pages/embor/inject">
-      <image src="/img/g1.png" class="tab-img"></image>
-      <text class="tab-text">注射</text>
+  <block wx:for="{{arricon}}" wx:key="unique" for:key="id">
+    <navigator class="tab" url="{{item.url}}">
+      <image src="{{item.icon}}" class="tab-img"></image>
+      <text class="tab-text">{{item.title}}</text>
     </navigator>
-
-    <navigator class="tab" url="/pages/hair/inject">
-     <image src="/img/g2.png" class="tab-img"></image>
-      <text class="tab-text">纹绣</text>
-    </navigator>
-
-    <navigator class="tab" url="/pages/inject/inject">
-      <image src="/img/g3.png" class="tab-img"></image>
-      <text class="tab-text">私密</text>
-    </navigator>
-
-   <navigator class="tab" url="/pages/secret/inject">
-      <image src="/img/g4.png" class="tab-img"></image>
-      <text class="tab-text">美容</text>
-   </navigator>
+  </block>
 </view>
 <view class="vidox">
   <text>教学资质</text>
-  <video src='http://www.w3school.com.cn//i/movie.mp4' class='vido'></video>
+  <video src='{{vidosrc}}' class='vido'></video>
 </view>
